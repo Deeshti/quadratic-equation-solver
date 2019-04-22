@@ -6,7 +6,7 @@ public class solvequadratic {
         double a, b, c, d, x, x1, x2;
         //Input a, b, c 
         Scanner in = new Scanner(System.in); //Scan the keyboard for input
-        in.close();
+        
 
         System.out.println("Your quadratic equation must be in the following form: a(x^2) + b(x) + c = 0");
         System.out.print("Enter the value of a: ");
@@ -18,7 +18,7 @@ public class solvequadratic {
         System.out.print("Enter the value of c: ");
         c = in.nextDouble();
         
-
+        in.close();
 
         //Calculating d
         d = Math.pow(b, 2) - (4*a*c);
